@@ -1,0 +1,7 @@
+memory_path: Replaymemory_nyc_brooklyn_M
+min_q_weight: 1
+lagrange_thresh: 10
+alpha: 0.1
+rew_scale: 0.001
+samples_buffer: 10000
+max_episodes: 8000

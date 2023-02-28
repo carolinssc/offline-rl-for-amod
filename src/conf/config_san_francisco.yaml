@@ -1,0 +1,7 @@
+memory_path: Replaymemory_san_francisco_M.pkl
+min_q_weight: 1
+lagrange_thresh: 10
+alpha: 0.3
+rew_scale: 0.01
+samples_buffer: 10000
+max_episodes: 8000
