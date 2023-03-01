@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ## Examples
 
 To train an agent online, `main_SAC.py` accepts the following arguments:
-```bash
+```
 cplex arguments:
     --cplexpath     defines directory of the CPLEX installation
     
@@ -54,7 +54,7 @@ simulator arguments: (unless necessary, we recommend using the provided ones)
 ```
 
 To train an agent offline, `main_CQL.py` accepts the following arguments (additional to main_SAC):
-```bash
+```
     
 model arguments:
     --test            activates agent evaluation mode (default: False)
@@ -66,7 +66,6 @@ model arguments:
     --st              whether to standardize data (default: False)
     --sc              whether to scale the data (default: Fasle)     
 ```
-For the A2C Baseline we refer to https://github.com/DanieleGammelli/gnn-rl-for-amod
 
 **Important**: Take care of specifying the correct path for your local CPLEX installation. Typical default paths based on different operating systems could be the following
 ```bash
