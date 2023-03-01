@@ -1,5 +1,5 @@
 # Offline-RL for AMOD
-Official implementation of [Learning to Control Autonomous Fleets from Observation via Offline Reinforcement Learning]
+Official implementation of [Learning to Control Autonomous Fleets from Observation via Offline Reinforcement Learning](https://arxiv.org/abs/2302.14833)
 
 <img align="center" src="readme_figure.png" width="1100"/></td> <br/>
 
@@ -36,9 +36,9 @@ cplex arguments:
     
 model arguments:
     --test            activates agent evaluation mode (default: False)
-    --max_episodes    number of episodes within each trial (default: 10)
+    --max_episodes    number of training episodes (default: 10000)
     --max_steps       number of steps per episode (default: T=20)
-    --hidden_size     node embedding dimension
+    --hidden_size     node embedding dimension (default: 256)
     --no-cuda         disables CUDA training (default: True, i.e. run on CPU)
     --directory       defines directory where to log files (default: saved_files)
     --batch_size      defines the batch size 
@@ -59,9 +59,10 @@ To train an agent offline, `main_CQL.py` accepts the following arguments (additi
 model arguments:
     --test            activates agent evaluation mode (default: False)
     --memory_path     path, where the data is saved
-    --min_q_weight    conservative coefficient (eta \in paper)
+    --cuda            enables CUDA training (default: True)
+    --min_q_weight    conservative coefficient (eta in paper)
     --samples_buffer  number of samples to take from the dataset 
-    --lagrange_tresh  lagrange treshhold tau \for autonamtic tuning of eta 
+    --lagrange_tresh  lagrange treshhold tau for autonamtic tuning of eta 
     --st              whether to standardize data (default: False)
     --sc              whether to scale the data (default: Fasle)     
 ```

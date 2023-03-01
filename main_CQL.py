@@ -117,7 +117,7 @@ parser.add_argument('--max_episodes', type=int, default=10000, metavar='N',
 parser.add_argument('--max_steps', type=int, default=20, metavar='N',
                     help='number of steps per episode (default: T=60)')
 parser.add_argument('--cuda', type=bool, default=True,
-                    help='disables CUDA training')
+                    help='enables CUDA training')
 parser.add_argument("--batch_size", type=int, default=100,
                     help='defines the batch size')
 parser.add_argument("--alpha", type=float, default=0.3,
